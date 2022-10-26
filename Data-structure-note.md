@@ -37,18 +37,18 @@ Big O is a way to categorize your algorithms time or memory requirements based o
   
 # SEARCH
 
-   - **Linear search** is an alorithm technique, where you must traverse through the array's index to obtain a value.
-that is measurable in O(N) .
+   - **Linear search** is an alorithm technique, where you must traverse through the array's index to obtain a value. 
+that is measurable in O(N) . [typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/LinearSearchList.ts)
    - A form of search method called **binary search** involves halving the size of an ordered dataset until the target value is located. Measured in
-O(logN) or O(NlogN) 
+O(logN) or O(NlogN). [typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BinarySearchList.ts)
 
 -----------
 
 # SORT
--  **Bubble sort** is a type of algorithm where a single iteration produces the largest number (data) at the last index till the dataset is sorted. The next iteration won’t include the last index. It is measured in O(N^2).
--  **A linked list** is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence. Runtime is O(1)
--  **A Queue** is a specific implementation of a linked list where there is no Bi link to the Node, which is denoted as FIFO (First In First Out) operation. The runtime is N(1) 
--  **A Stack** is a single-Linked list where we get to add to it and remove from the head, denoted as FILO (First In Last Out). Runtime is O(1)
+-  **Bubble sort** is a type of algorithm where a single iteration produces the largest number (data) at the last index till the dataset is sorted. The next iteration won’t include the last index. It is measured in O(N^2). [typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BubbleSort.ts)
+-  **A linked list** is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence. Runtime is O(1). 
+-  **A Queue** is a specific implementation of a linked list where there is no Bi link to the Node, which is denoted as FIFO (First In First Out) operation. The runtime is N(1). [typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/Queue.ts)
+-  **A Stack** is a single-Linked list where we get to add to it and remove from the head, denoted as FILO (First In Last Out). Runtime is O(1). [typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/Stack.ts)
 
 ----
 # ARRAY
@@ -62,5 +62,5 @@ O(logN) or O(NlogN)
 | 3. You have to allocate the memory of your array up front, even if you’re not aware of the memory length needed.  | Memory are created instantly when a data is added to the node, but it costs a runtime to create the memory. | 
 | 4. You have options of search methods in your array. E.g. Binary Search etc  | Linear search is your only option when you want to search for a data in your list. |
 
-- **ArrayList** uses the array as the fundament base to perform extra operations on it like Resizing, Pushing, Popping etc. Array list is time-consuming using Enqueue/Dequeue and fast with Push/Pop.
+- **ArrayList** uses the array as the fundament base to perform extra operations on it like Resizing, Pushing, Popping etc. Array list is time-consuming using Enqueue/Dequeue and fast with Push/Pop.[typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/array-test.ts)
 - **Array Buffer**, is used when there is some uncertainty about the amount of data or the rate of arrival of the data that will be placed there.
