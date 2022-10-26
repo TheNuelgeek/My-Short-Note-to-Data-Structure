@@ -1,0 +1,1 @@
+## My Short Note to Data Structure
