@@ -22,7 +22,7 @@
 ## What is Data Structure ?
 Data structures frame the organization of information so that machines and humans can better understand it.
 
-## What us Alogrithm ?
+## What is Alogrithm ?
 Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output.
 
 ## WHat is Big O ?
@@ -58,9 +58,9 @@ O(logN) or O(NlogN). [typescript implementation](https://github.com/TheNuelgeek/
 | Array | Linked list |
 | ----------- | ----------- |
 | 1. Access to Indices | Indices don’t exist in the list. |
-| 2. It is O(1) when you want to write into an array. | It is O(1) when you want to insert into a listext | 
-| 3. You have to allocate the memory of your array up front, even if you’re not aware of the memory length needed.  | Memory are created instantly when a data is added to the node, but it costs a runtime to create the memory. | 
-| 4. You have options of search methods in your array. E.g. Binary Search etc  | Linear search is your only option when you want to search for a data in your list. |
+| 2. It is O(1) when you want to write into an array. | It is O(1) when you want to insert into a list | 
+| 3. You have to allocate the memory of your array up front, even if you’re not aware of the memory length needed.  | Memory are created instantly when data is added to the node, but it costs a runtime to create the memory. | 
+| 4. You have options for search methods in your array. E.g. Binary Search etc  | Linear search is your only option when you want to search for data in your list. |
 
 - **ArrayList** uses the array as the fundament base to perform extra operations on it like Resizing, Pushing, Popping etc. Array list is time-consuming using Enqueue/Dequeue and fast with Push/Pop.[typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/array-test.ts)
 - **Array Buffer**, is used when there is some uncertainty about the amount of data or the rate of arrival of the data that will be placed there.
