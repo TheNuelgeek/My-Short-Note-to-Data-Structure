@@ -86,3 +86,6 @@ Even if you don't use these stages directly, it's still vital to be aware of the
 Divide and conquer is a strategy used by the **QuickSort algorithm**.
 The algorithm selects a pivot element and moves the array's elements in such a way that those that are smaller than the pivot element are moved to the left side and those that are greater are moved to the right side.
 The subarrays to the left and right of the pivot element are then sorted repeatedly by the algorithm. The running time of this algorithm is O(NlogN)/  O(N^2)
+
+------
+# *Up Next: Advanced DSA (Trees, Tree Search, Heap, Graphs, Maps&LRU) So do STAR the repository* 
