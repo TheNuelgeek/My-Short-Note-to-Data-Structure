@@ -64,3 +64,18 @@ O(logN) or O(NlogN). [typescript implementation](https://github.com/TheNuelgeek/
 
 - **ArrayList** uses the array as the fundament base to perform extra operations on it like Resizing, Pushing, Popping etc. Array list is time-consuming using Enqueue/Dequeue and fast with Push/Pop.[typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/array-test.ts)
 - **Array Buffer**, is used when there is some uncertainty about the amount of data or the rate of arrival of the data that will be placed there.
+------
+# RECURSION
+**Recursion** is a type of algorithm that constantly calls its function until the base case is satisfied, or an action is completed. Understanding your base case will help you comprehend recursion better.
+
+**Three steps make up recursion.**
+- Pre; Before recusing, you can do an operation.
+- Recuse; Does the calling of the function.
+- Post; After recusing, you can execute an operation.
+
+Even if you don't use these stages directly, it's still vital to be aware of them because pathing depends heavily on them.
+[MazrSolver algorithm to understand recursion](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/MazeSolver.ts)
+
+*Note :*
+-  If you have a solid understanding of why you should stop recusing, that reason makes up a solid base case.
+-  You might ask when should you use a recursion algorithm instead of loop algorithm?; Answer: When there is not defined end or when there is branching factor.
