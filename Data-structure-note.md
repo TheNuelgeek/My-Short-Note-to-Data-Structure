@@ -25,7 +25,7 @@ Data structures frame the organization of information so that machines and human
 ## What us Alogrithm ?
 Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output.
 
-## WHat is Big O ?
+## What is Big O ?
 Big O is a way to categorize your algorithms time or memory requirements based on input. It is not meant to be an exact measurement. It will not tell you how many CPU cycles it takes, instead it is meant to generalize the growth of your algorithm.
 
 ## Important Concepts
@@ -75,17 +75,17 @@ O(logN) or O(NlogN). [typescript implementation](https://github.com/TheNuelgeek/
 - Post; After recusing, you can execute an operation.
 
 Even if you don't use these stages directly, it's still vital to be aware of them because pathing depends heavily on them.
-[MazrSolver algorithm to understand recursion](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/MazeSolver.ts)
+[MazeSolver algorithm Implementation  to understand recursion](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/MazeSolver.ts)
 
 *Note :*
 -  If you have a solid understanding of why you should stop recusing, that reason makes up a solid base case.
--  You might ask when should you use a recursion algorithm instead of loop algorithm?; Answer: When there is not defined end or when there is branching factor.
+-  You might ask when should you use a recursion algorithm instead of loop algorithm?; Answer: When there is no defined end or when there is branching factor.
 
 # QUICK SORT
 
 Divide and conquer is a strategy used by the **QuickSort algorithm**.
 The algorithm selects a pivot element and moves the array's elements in such a way that those that are smaller than the pivot element are moved to the left side and those that are greater are moved to the right side.
-The subarrays to the left and right of the pivot element are then sorted repeatedly by the algorithm. The running time of this algorithm is O(NlogN)/  O(N^2)
+The subarrays to the left and right of the pivot element are then sorted repeatedly by the algorithm. The running time of this algorithm is O(NlogN) or  O(N^2)
 
 ------
 # *Up Next: Advanced DSA (Trees, Tree Search, Heap, Graphs, Maps&LRU) So do STAR the repository* 
