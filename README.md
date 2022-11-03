@@ -4,7 +4,7 @@
 --------------------
 
 **ABOUT :** 
-- This note will contain a summary of different data structures, algorithms, and some implementation on typescript. These contents are notes I made up from Data structure classes from Frontend masters.
+- This note will contain a summary of different TOP(real world used) data structures, algorithms, and some implementation on typescript. These contents are notes I made up from Data structure classes from Frontend masters.
 
 **AIM :** 
 - This note is to help you with snippet of data structure and algorithms meanings and how it works.
