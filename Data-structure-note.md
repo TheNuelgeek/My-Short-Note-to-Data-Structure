@@ -88,4 +88,32 @@ The algorithm selects a pivot element and moves the array's elements in such a w
 The subarrays to the left and right of the pivot element are then sorted repeatedly by the algorithm. The running time of this algorithm is O(NlogN) or  O(N^2)
 
 ------
-# *Up Next: Advanced DSA (Trees, Tree Search, Heap, Graphs, Maps&LRU) So do STAR the repository* 
+# TREE
+
+The tree is a data structure that starts from a single point and goes all down like roots, the computer’s hard drives, its directories and how it is organized is a good illustration of a tree.
+A tree is a structure made up of one node called the root and zero, one, or more subtrees. It can also be empty and have no nodes.
+
+# TREE TERMINOLOGY
+
+- **Root:** The most parent node. The First. Adam.
+- **Height:** The longest path from the root to the most child node
+- **Binary tree:**  A tree in which has at most 2 children, at least 0 children
+- **General tree:** A tree with 0 or more children
+- **Binary search tree:** A tree in which has a specific ordering to the nodes and at most 2 children
+- **Leaves:** A node without children
+- **Balanced:** A tree is perfectly balanced when any node's left and right children have the same height.
+- **Branching factor:** The amount of children a tree has.
+  
+# Traversal | Visiting a Node
+There are different ways in which you can visit the nodes of a tree.
+- Pre order
+- In order
+- Post order
+  
+Inorder traversal traverses one subtree of a node, visits the node, and then traverses its other subtree. Preorder traversal visits a node and then traverses both of its subtrees. Postorder traversal traverses both subtrees of a node, then visits the node.
+The traversal method makes use of recursion technique while visiting the nodes. The running time of this traversal is O(N). Implementation ([PreOrder](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTPreOrder.ts), [InOrder](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTInOrder.ts), [PostOrder](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTPostOrder.ts)). Note: This type of order is Depth First search | DFS, We implicitly used stack DS for calling the recuse function. 
+
+# TREE SEARCH
+**Breath first search:** This is a type of tree search that implicitly makes use of Queue data structure while visiting each node on a tree level. The run time of this data structure is O(N), but if we use make use of an array list, the run time will be O(N^2). [Breath first search Implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTBFS.ts). 
+
+# *Up Next: Advanced DSA (Tree Contd(DFS Find, DFS Insert, DFS Delete), Heap, Graphs, Tries, Maps&LRU) So do STAR the repository* 
