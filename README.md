@@ -4,7 +4,7 @@
 --------------------
 
 **ABOUT :** 
-- This note will contain a summary of different TOP(real world used) data structures, algorithms, and some implementation on typescript. These contents are notes I made up from Data structure classes from Frontend masters.
+- This note will contain a summary of different data structures, algorithms, and some implementation on typescript. These contents are notes I made up from Data structure classes from Frontend masters.
 
 **AIM :** 
 - This note is to help you with snippet of data structure and algorithms meanings and how it works.
@@ -58,12 +58,13 @@ O(logN) or O(NlogN). [typescript implementation](https://github.com/TheNuelgeek/
 | Array | Linked list |
 | ----------- | ----------- |
 | 1. Access to Indices | Indices don’t exist in the list. |
-| 2. It is O(1) when you want to write into an array. | It is O(1) when you want to insert into a list | 
-| 3. You have to allocate the memory of your array up front, even if you’re not aware of the memory length needed.  | Memory are created instantly when data is added to the node, but it costs a runtime to create the memory. | 
-| 4. You have options for search methods in your array. E.g. Binary Search etc  | Linear search is your only option when you want to search for data in your list. |
+| 2. It is O(1) when you want to write into an array. | It is O(1) when you want to insert into a listext | 
+| 3. You have to allocate the memory of your array up front, even if you’re not aware of the memory length needed.  | Memory are created instantly when a data is added to the node, but it costs a runtime to create the memory. | 
+| 4. You have options of search methods in your array. E.g. Binary Search etc  | Linear search is your only option when you want to search for a data in your list. |
 
 - **ArrayList** uses the array as the fundament base to perform extra operations on it like Resizing, Pushing, Popping etc. Array list is time-consuming using Enqueue/Dequeue and fast with Push/Pop.[typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/array-test.ts)
 - **Array Buffer**, is used when there is some uncertainty about the amount of data or the rate of arrival of the data that will be placed there.
+
 ------
 # RECURSION
 **Recursion** is a type of algorithm that constantly calls its function until the base case is satisfied, or an action is completed. Understanding your base case will help you comprehend recursion better.
@@ -80,12 +81,11 @@ Even if you don't use these stages directly, it's still vital to be aware of the
 -  If you have a solid understanding of why you should stop recusing, that reason makes up a solid base case.
 -  You might ask when should you use a recursion algorithm instead of loop algorithm?; Answer: When there is no defined end or when there is branching factor.
 
------
 # QUICK SORT
 
 Divide and conquer is a strategy used by the **QuickSort algorithm**.
 The algorithm selects a pivot element and moves the array's elements in such a way that those that are smaller than the pivot element are moved to the left side and those that are greater are moved to the right side.
-The subarrays to the left and right of the pivot element are then sorted repeatedly by the algorithm. The running time of this algorithm is O(NlogN) or O(N^2)
+The subarrays to the left and right of the pivot element are then sorted repeatedly by the algorithm. The running time of this algorithm is O(NlogN) or  O(N^2)
 
 ------
 # TREE
@@ -114,6 +114,87 @@ Inorder traversal traverses one subtree of a node, visits the node, and then tra
 The traversal method makes use of recursion technique while visiting the nodes. The running time of this traversal is O(N). Implementation ([PreOrder](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTPreOrder.ts), [InOrder](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTInOrder.ts), [PostOrder](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTPostOrder.ts)). Note: This type of order is Depth First search | DFS, We implicitly used stack DS for calling the recuse function. 
 
 # TREE SEARCH
-**Breath first search:** This is a type of tree search that implicitly makes use of Queue data structure while visiting each node on a tree level. The run time of this data structure is O(N), but if we use make use of an array list, the run time will be O(N^2). [Breath first search Implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTBFS.ts). 
+**Breath first search:** This is a type of tree search that implicitly makes use of Queue data structure while visiting each node on a tree level. The run time of this data structure is O(N), but if make use of an array list, the run time will be O(N^2). [Breath first search Implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BTBFS.ts). 
 
-# *Up Next: Advanced DSA (Tree Contd(DFS Find, DFS Insert, DFS Delete), Heap, Graphs, Tries, Maps&LRU) So do STAR the repository* 
+- Note: An Interview question example of comparing two binary trees to see if they equal in both shape and structure. Depth-first search preserves tree shape, while breadth-first search does not. [implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/CompareBinaryTrees.ts).
+
+# Heap (priority queue)
+Heap data structure as a binary tree, where every child and grandchild is smaller (MinHeap) or larger than (MaxHeap) the current node.
+
+- Whenever a node is added, we must adjust the tree
+- Whenever a node is deleted, we must adjust the tree
+- There is no traversing in the tree
+- Binary is always a complete tree
+------------------------
+**Some cool characteristics**
+- It is self-balancing
+- It can be used for priority
+- Funnest data structure to implement, but easy to get wrong!
+
+The runtime of this algorithm is O(N log n). [Heap Typescript implementation
+](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/MinHeap.ts).
+
+# Tries
+A trie is a special tree that can compactly store strings. Also known as radix tree,         prefix tree, digital tree, you can perceive is as an auto complete e.g., when you swipe through your phone keyboard it auto generates a word for you that’s how a trie works. Runtime O(1). 
+
+# Graphs
+Graphs are a series of node with some amount of connection or no connection, and they are connected nodes without roots. 
+
+## **Terminology of Graphs**
+-----------------------
+This is not an exhaustive list of terms, but it is the terms that we may end up using today.
+
+**Graph Terms**
+
+- **cCcle:** When you start at Node(x), follow the links, and end back at Node(x).
+
+- **Acyclic:** A graph that contains no cycles
+connected: When every node has a path to another node.
+
+- **Directed:** When there is a direction to the connections. Think Twitter
+
+- **Undirected:** !directed.
+Weighted: The edges have a weight associated with them. Think Maps.
+
+- **Dag:** Directed, acyclic graph.
+
+---------------
+## **Implementation Terms**
+**Node:** a point or vertex on the graph.
+
+**Edge:** the connection betxit two nodes.
+
+----------------
+
+The **BigO** is commonly stated in terms of V and E where V stands for vertices and E stands for edges
+So O(V * E) means that we will check every vertex, and on every vertex we check every edge
+
+-------------------------
+## **How are graphs represented**
+- **Adjacency list:** This is a type of list where the indices map to the node. [DFS on Adjacency list typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/DFSGraphList.ts).
+
+- **Adjacency matrix:** An adjacency matrix is a way of representing a graph as a matrix of booleans (0's and 1's). A finite graph can be represented in the form of a square matrix on a computer. [BFS on Adjacency matrix typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/BFSGraphMatrix.ts).
+
+- **Dijkstra shortest path search:** Dijkstra's shortest path is an algorithm that finds the shortest paths between nodes in a graph. It produces the shortest path tree with the source node as the root. It is profoundly used in computer networks to generate optimal routes with the aim of minimizing routing costs. Runtime is O(logV(V + E)). [Dijkstra implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/DijkstralList.ts).
+
+-------------------------
+# Maps & LRU (Least Recently Used)
+A Map is a type of fast key lookup data structure that offers a flexible means of indexing into its individual elements.
+
+**Terms**
+- **load factor:** The amount of data points vs the amount of storage (data.len / storage.capacity)
+- **key:** a value that is hashable and is used to look up data. The hash has to be consistent.
+- **Value:** a value that is associated with a key
+collision: when 2 keys map to the same cell.
+
+# LRU
+The Least Recently Used (LRU) Cache mechanism, allowing you to quickly identify which item hasn't been used for the longest amount of time. An LRU cache is a combination of map and linked list data structures. This algorithm makes use of double linked list & Hash maps. [LRU cache typescript implementation](https://github.com/TheNuelgeek/Data-Structure-Algorthim-kata-machine/blob/master/src/day1/LRU.ts). 
+
+-------------------------
+
+- ## Thanks for reading my note, if you find this note valuable you can give me a follow on twitter [@the_nuelgeek](https://twitter.com/theNuelgeek) and subscribe to email list on hashnode [Geeks Oasis](https://nuelgeek.hashnode.dev/)
+
+- ## You can also make a pull request or contact me, if you have any extra data structure / Alogrithm you want to add.
+
+- ## Contact me for your smart contract development project and smart contract auditng. Next new skill Frontend development.
+- ## Feedbacks are highly welcomed.
